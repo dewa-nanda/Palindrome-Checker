@@ -5,6 +5,7 @@ body {
   #heading-content h1{
     color: #365E32;
     text-align:center;
+    font-size: 45px;
   }
   
   #main-content {
@@ -24,6 +25,7 @@ body {
   }
   
   #main-content h2{
+    font-size: 35px;
     color: #365E32;
   }
   
@@ -32,6 +34,7 @@ body {
     display:flex;
     justify-content: center;
     gap:15px;
+    width: 85%;
   }
   
   #text-input {
@@ -39,7 +42,8 @@ body {
     border:0px;
     text-align:center;
     font-size:25px;
-    border-bottom: 5px solid #55AD9B
+    border-bottom: 5px solid #55AD9B;
+    flex-basis: 70%;
   }
   
   #check-btn {
@@ -48,6 +52,8 @@ body {
     border-radius: 10px;
     color:#F1F8E8;
     padding:5px;
+    flex-basis: 30%;
+    font-size: 18px;
   }
   
   #check-btn:hover{
