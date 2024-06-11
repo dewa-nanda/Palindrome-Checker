@@ -1,0 +1,57 @@
+body {
+    background-color:#D8EFD3;
+  }
+  
+  #heading-content h1{
+    color: #365E32;
+    text-align:center;
+  }
+  
+  #main-content {
+    margin: 0px auto;
+    width: 85%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:15px;
+    padding: 20px;
+    background: rgba( 126, 211, 33, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+  }
+  
+  #main-content h2{
+    color: #365E32;
+  }
+  
+  #form-input{
+    padding: 10px;
+    display:flex;
+    justify-content: center;
+    gap:15px;
+  }
+  
+  #text-input {
+    background: rgba( 126, 211, 33, 0 );
+    border:0px;
+    text-align:center;
+    font-size:25px;
+    border-bottom: 5px solid #55AD9B
+  }
+  
+  #check-btn {
+    background-color: #55AD9B;
+    border: 0px;
+    border-radius: 10px;
+    color:#F1F8E8;
+    padding:5px;
+  }
+  
+  #check-btn:hover{
+    background-color: #95D2B3;
+    color:#F1F8E8;
+  }
+  
