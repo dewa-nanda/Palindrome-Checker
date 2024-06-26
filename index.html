@@ -3,6 +3,7 @@
 <html>
   <head>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
   </head>
 
   <body>
@@ -11,13 +12,25 @@
         <h1>Palindrome Checker</h1>
       </div>
 
-      <div id="main-content">
-        <h2>Masukan text yang menurut anda palindrome:</h2>
-        <div id="form-input">
-          <input id="text-input">
-          <button id="check-btn">Check</button>
+      <main>
+        <div id="main-content">
+          <h2>Masukan text yang menurut anda palindrome:</h2>
+          <div id="form-input">
+            <input id="text-input">
+            <button id="check-btn">Check</button>
+          </div>
         </div>
-      </div>
+  
+        <div id="result">
+          <div class="result-header">
+            <h2>Hasil Pengecekan Text</h2>
+          </div>
+
+          <div class="result-main">
+            <p id="text-content">Anda Belum Memberikan Text Apapun!</p>
+          </div>
+        </div>
+      </main>
     </div>
   </body>
 </html>
