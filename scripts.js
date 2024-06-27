@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         if(inputElement.value == ''){
             resultContent.innerText = "Anda Belum Memberikan Text Apapun!"
+            window.alert("Text Tidak Boleh Kosong!");
         }else{
             if(JSON.stringify(realText) == JSON.stringify(reveseText))
             {
@@ -18,5 +19,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     })
-    
 });

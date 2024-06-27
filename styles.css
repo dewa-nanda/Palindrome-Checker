@@ -1,8 +1,130 @@
-body {
-    background-color:#D8EFD3;
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+
+  body {
+    background-color:#2a2438;
+    color: #dbd8e3;
   }
   
-  #heading-content h1{
+  header{
+    border-bottom: 2px solid #5c5470;
+    padding: 8px;
+    display: flex;
+    justify-content: space-around;
+
+
+    #logo-header{
+      color: #dbd8e3;
+      font-family: "Lobster", sans-serif;
+    }
+
+    #navigation-header{
+      height: 100%;
+      margin: auto 0;
+      display: flex;
+      gap: 8px;
+      font-family: "Poppins", sans-serif;
+
+      a{
+        color: #dbd8e3;
+        text-decoration: none;
+      }
+
+      a:hover{
+        color: #f7f7f7;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    justify-content: center;
+
+    #header-main{
+      text-align: center;
+    }
+
+    #content-main{
+      border-radius: 8px;
+      width: 50%;
+      padding: 12px;
+      background-color: #5c5470;
+      margin: 0 auto;
+
+      #form-input{
+        display: flex;
+        justify-content: center;
+        gap: 18px;
+        input {
+          background-color: #5c5470;
+          color: whitesmoke;
+          flex-basis: 90%;
+          border: 1px solid whitesmoke;
+          border-radius: 4px;
+          height: 45px;
+          text-align: center;
+        }
+        button{
+          flex-basis: 10%;
+          border-radius: 4px;
+          border: 0px;
+          background-color: #5c5470;
+          color: whitesmoke;
+          border: 1px solid whitesmoke;
+        }
+        button:hover{
+          background-color: whitesmoke;
+          color: #5c5470;
+          border: 1px solid #5c5470;
+        }
+
+      }
+    }
+
+    #content-information{
+      border-radius: 8px;
+      width: 30%;
+      padding: 12px;
+      background-color: #5c5470;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      
+      h1{
+        text-align: center;
+        border-bottom: 1px solid whitesmoke;
+      }
+
+
+    }
+  }
+
+  footer {
+    padding: 8px;
+    border-top: 2px solid #5c5470;
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    a{
+      color: #dbd8e3;
+      text-decoration: none;
+    }
+
+    a:hover{
+      color: #f7f7f7;
+      text-decoration: underline;
+    }
+  }
+
+  /* #heading-content h1{
     color: #365E32;
     text-align:center;
     font-size: 45px;
@@ -84,4 +206,4 @@ body {
     background-color: #95D2B3;
     color:#F1F8E8;
   }
-  
+   */
