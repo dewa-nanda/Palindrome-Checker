@@ -1,22 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     const inputElement = document.getElementById('text-input');
+    const outputElement = document.getElementById('content-answer');
     const button = document.getElementById('check-btn');
 
-    button.addEventListener('click', () => {
-        const realText = inputElement.value.split('');
-        const reveseText = inputElement.value.split('').reverse();
-        const resultContent = document.getElementById('text-content');
-
-        if(inputElement.value == ''){
-            resultContent.innerText = "Anda Belum Memberikan Text Apapun!"
-            window.alert("Text Tidak Boleh Kosong!");
-        }else{
-            if(JSON.stringify(realText) == JSON.stringify(reveseText))
-            {
-                resultContent.innerText = inputElement.value + " merupakan palindrome";
-            }else{
-                resultContent.innerText = inputElement.value + " bukan merupakan palindrome";
-            }
-        }
-    })
+    button.addEventListener('click', function() {
+        outputElement.classList.toggle('visible');
+    });
 });

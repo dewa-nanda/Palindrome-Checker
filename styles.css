@@ -1,3 +1,7 @@
+  html {
+    scroll-behavior: smooth;
+  }
+
   * {
     padding: 0px;
     margin: 0px;
@@ -51,7 +55,7 @@
       text-align: center;
     }
 
-    #content-main{
+    #content-main, #content-answer{
       border-radius: 8px;
       width: 50%;
       padding: 12px;
@@ -88,6 +92,17 @@
       }
     }
 
+    .content-answer{
+      opacity: 0;
+      display: none; 
+      animation: fadeInOut 0.6s ease-in-out; 
+    }
+
+    .content-answer.visible{
+      opacity: 1; 
+      display: block; 
+    }
+
     #content-information{
       border-radius: 8px;
       width: 30%;
@@ -101,6 +116,10 @@
       h1{
         text-align: center;
         border-bottom: 1px solid whitesmoke;
+      }
+
+      p{
+        text-align: justify;
       }
 
 
@@ -124,86 +143,19 @@
     }
   }
 
-  /* #heading-content h1{
-    color: #365E32;
-    text-align:center;
-    font-size: 45px;
-  }
+  @keyframes fadeInOut { 
+    0% { 
+        opacity: 0; 
+        display: none; 
+    } 
   
-  main{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-  }
-
-  #main-content, #result {
-    margin: 0px auto;
-    width: 85%;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    gap:15px;
-    padding: 20px;
-    background: rgba( 126, 211, 33, 0.25 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
-    border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
-  }
-
-  #result{
-    width: 50%;
-
-    .result-header{
-      h2{
-        font-size: 35px;
-        color: #365E32;
-      }
-    }
-    .result-main{
-      background: rgba( 126, 211, 33, 0 );
-      border:0px;
-      text-align:center;
-      font-size:25px;
-      color: #365E32;
-    }
-  }
+    50% { 
+        opacity: 0.5; 
+        display: block; 
+    } 
   
-  #main-content h2{
-    font-size: 35px;
-    color: #365E32;
+    100% { 
+        opacity: 1; 
+        display: block; 
+    } 
   }
-  
-  #form-input{
-    padding: 10px;
-    display:flex;
-    justify-content: center;
-    gap:15px;
-    width: 85%;
-  }
-  
-  #text-input {
-    background: rgba( 126, 211, 33, 0 );
-    border:0px;
-    text-align:center;
-    font-size:25px;
-    border-bottom: 5px solid #55AD9B;
-    flex-basis: 70%;
-  }
-  
-  #check-btn {
-    background-color: #55AD9B;
-    border: 0px;
-    border-radius: 10px;
-    color:#F1F8E8;
-    padding:5px;
-    flex-basis: 30%;
-    font-size: 18px;
-  }
-  
-  #check-btn:hover{
-    background-color: #95D2B3;
-    color:#F1F8E8;
-  }
-   */
