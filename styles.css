@@ -95,12 +95,26 @@
     .content-answer{
       opacity: 0;
       display: none; 
+      text-align: center;
+      
+      h2{
+        border-bottom: 2px solid #2a2438;
+        margin-bottom: 10px;
+        padding-bottom: 5px;
+        font-size: 24px;
+      }
+
+      p{
+        font-size: 20px;
+      }
+
       animation: fadeInOut 0.6s ease-in-out; 
     }
 
     .content-answer.visible{
       opacity: 1; 
       display: block; 
+      animation: fadeInOut 0.6s ease-in-out; 
     }
 
     #content-information{
